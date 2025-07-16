@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procedimentos e Manuais - Biblioteca SalvaBras</title>
+    <style>
+        /* --- 🎨 IDENTIDADE VISUAL SALVABRAS (Consistente) 🎨 --- */
+        :root {
+            --primary-orange: #FF6B35;
+            --secondary-green: #4CAF50;
+            --accent-blue: #2196F3;
+            --dark-gray: #2C2C2C;
+            --light-gray: #F5F5F5;
+            --white: #FFFFFF;
+            --text-primary: #2C2C2C;
+            --text-secondary: #666666;
+        }
+        body {
+            font-family: 'Segoe UI', 'Roboto', sans-serif;
+            background-color: var(--light-gray);
+            color: var(--text-primary);
+            margin: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+        h1, h2 {
+            font-weight: 700;
+            color: var(--dark-gray);
+        }
+        h1 {
+            font-size: 36px;
+            color: var(--primary-orange);
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .page-subtitle {
+            text-align: center;
+            font-size: 18px;
+            color: var(--text-secondary);
+            margin-top: 0;
+            margin-bottom: 40px;
+        }
+
+        /* --- Header (Reutilizado) --- */
+        .main-header {
+            background-color: var(--dark-gray);
+            color: var(--white);
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .main-header .logo { font-size: 24px; font-weight: bold; color: var(--primary-orange); }
+        .main-header nav a { color: var(--white); text-decoration: none; margin-left: 25px; }
+
+        /* --- Lista de Documentos --- */
+        .document-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .document-list-item {
+            background-color: var(--white);
+            border: 1px solid #eee;
+            border-left: 5px solid var(--accent-blue);
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: box-shadow 0.2s;
+        }
+        .document-list-item:hover {
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+        .document-info h3 {
+            margin: 0 0 5px 0;
+            font-size: 20px;
+            color: var(--dark-gray);
+        }
+        .document-info p {
+            margin: 0;
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+        .btn {
+            color: var(--white);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 50px;
+            font-weight: bold;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .btn-orange { background-color: var(--primary-orange); }
+
+        /* --- Footer (Reutilizado) --- */
+        .main-footer {
+            background-color: var(--dark-gray);
+            color: var(--white);
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">SALVABRAS</div>
+        <nav>
+            <a href="index.html">🏠 Início</a>
+            <a href="#">📚 Bibliotecas</a>
+            <a href="#">📊 Meu Dashboard</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Procedimentos e Manuais</h1>
+        <p class="page-subtitle">Consulte procedimentos operacionais, manuais técnicos e instruções de trabalho atualizadas.</p>
+
+        <ul class="document-list">
+            <li class="document-list-item">
+                <div class="document-info">
+                    <h3>Procedimento Operacional Padrão (POP)</h3>
+                    <p>Modelo padrão para descrever operações e processos de forma detalhada.</p>
+                </div>
+                <a href="template-pop.html" class="btn btn-orange">Ver Modelo</a>
+            </li>
+            <li class="document-list-item">
+                <div class="document-info">
+                    <h3>Instrução de Trabalho (IT)</h3>
+                    <p>Guia passo a passo para a execução de tarefas específicas.</p>
+                </div>
+                <a href="template-it.html" class="btn btn-orange">Ver Modelo</a>
+            </li>
+            <li class="document-list-item">
+                <div class="document-info">
+                    <h3>Checklist de Auditoria</h3>
+                    <p>Formulário para verificação e auditoria de documentos e processos.</p>
+                </div>
+                <a href="template-auditoria.html" class="btn btn-orange">Ver Modelo</a>
+            </li>
+            <!-- Adicionaríamos os outros templates aqui conforme os criamos -->
+        </ul>
+    </div>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 SalvaBras - Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

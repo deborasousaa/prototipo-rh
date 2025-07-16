@@ -1,0 +1,395 @@
+/* --- 🎨 IDENTIDADE VISUAL SALVABRAS 🎨 --- */
+:root {
+    --primary-orange: #FF6B35;
+    --secondary-green: #4CAF50;
+    --accent-blue: #2196F3;
+    --accent-pink: #E91E63;
+    --dark-gray: #2C2C2C;
+    --light-gray: #F5F5F5;
+    --white: #FFFFFF;
+    --text-primary: #2C2C2C;
+    --text-secondary: #666666;
+}
+
+/* --- Estilos Gerais --- */
+body {
+    font-family: 'Segoe UI', 'Roboto', sans-serif;
+    background-color: var(--white);
+    color: var(--text-primary);
+    margin: 0;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+section {
+    padding: 60px 0;
+}
+h1, h2, h3 {
+    font-weight: 700;
+    color: var(--dark-gray);
+}
+h2.section-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+p {
+    line-height: 1.7;
+    color: var(--text-secondary);
+}
+
+/* --- Header --- */
+.main-header {
+    background-color: var(--dark-gray);
+    color: var(--white);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.main-header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--primary-orange);
+}
+.main-header nav a {
+    color: var(--white);
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 16px;
+}
+
+/* --- Banner Principal --- */
+.hero-banner {
+    background-color: var(--dark-gray);
+    text-align: center;
+    padding: 80px 20px;
+    color: var(--white);
+}
+.hero-banner h1 {
+    font-size: 48px;
+    color: var(--white);
+    margin-bottom: 10px;
+}
+.hero-banner p {
+    font-size: 20px;
+    color: var(--light-gray);
+    max-width: 600px;
+    margin: auto;
+}
+
+/* --- Seção de Boas-Vindas --- */
+.welcome-section {
+    text-align: center;
+}
+.welcome-section ul {
+    list-style-type: none;
+    padding: 0;
+    display: inline-block;
+    text-align: left;
+    margin-top: 20px;
+}
+.welcome-section ul li {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+/* --- Grid de Cards --- */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+.info-card {
+    background-color: var(--white);
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 25px;
+    text-decoration: none;
+    color: var(--text-primary);
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+}
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+.info-card .icon {
+    font-size: 48px;
+    margin-bottom: 15px;
+    color: var(--primary-orange);
+}
+.info-card h3 {
+    font-size: 22px;
+    color: var(--dark-gray);
+    margin-bottom: 10px;
+}
+.info-card p {
+    font-size: 16px;
+    flex-grow: 1;
+}
+.info-card .btn {
+    margin-top: 20px;
+}
+
+/* --- Botões --- */
+.btn {
+    color: var(--white);
+    padding: 12px 25px;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.2s;
+}
+.btn:hover {
+    transform: scale(1.03);
+}
+.btn-orange { background-color: var(--primary-orange); }
+.btn-green { background-color: var(--secondary-green); }
+.btn-blue { background-color: var(--accent-blue); }
+
+/* --- Seção de Busca --- */
+.search-section {
+    background-color: var(--light-gray);
+}
+.search-box {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.search-box input {
+    width: 50%;
+    padding: 15px;
+    font-size: 18px;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+}
+
+/* --- Dashboard --- */
+.dashboard-card {
+    background-color: var(--light-gray);
+    border-left: 5px solid;
+    padding: 20px;
+    border-radius: 5px;
+}
+.dashboard-card h3 {
+    margin-top: 0;
+}
+.dashboard-card .metric {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--dark-gray);
+}
+
+/* --- Footer --- */
+.main-footer {
+    background-color: var(--dark-gray);
+    color: var(--white);
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 60px;
+}
+.main-footer a {
+    color: var(--primary-orange);
+}
+/* --- ESTILOS DAS TABELAS DE DADOS (PDI, MATRIZ, ETC) --- */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin: 30px 0;
+}
+.data-table th, .data-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+.data-table th {
+    background-color: var(--light-gray);
+    color: var(--dark-gray);
+}
+.data-table .text-left {
+    text-align: left;
+}
+.data-table .gap {
+    color: var(--primary-orange);
+    font-weight: bold;
+}
+/* --- Estilo para formulário de PDI --- */
+.pdi-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+  max-width: 600px;
+  margin-inline: auto;
+}
+.pdi-form input {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+.pdi-list {
+  display: grid;
+  gap: 20px;
+  max-width: 800px;
+  margin-inline: auto;
+}
+.pdi-card {
+  background-color: var(--light-gray);
+  border-left: 5px solid var(--primary-orange);
+  padding: 20px;
+  border-radius: 6px;
+}
+.pdi-card h3 {
+  margin: 0 0 10px 0;
+  color: var(--primary-orange);
+}
+/* --- ESTILOS DA PÁGINA DE PDI (pdi.html) --- */
+
+.pdi-form {
+    background-color: var(--light-gray);
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+.pdi-form input[type="text"] {
+    width: 98%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.pdi-form button {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+}
+
+.pdi-list h3 {
+    border-bottom: 2px solid var(--primary-orange);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.pdi-card {
+    background-color: var(--white);
+    border: 1px solid #eee;
+    border-left: 5px solid var(--accent-pink);
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 15px;
+    position: relative; /* Necessário para o botão de remover */
+}
+
+.pdi-card h4 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.pdi-card .btn-blue {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 5px 10px; /* Botão menor */
+    font-size: 12px;
+}
+/* --- ESTILOS DA PÁGINA DE TREINAMENTOS --- */
+
+.filter-bar {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.btn-filter {
+    background-color: #e0e0e0;
+    color: var(--text-secondary);
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.btn-filter.active, .btn-filter:hover {
+    background-color: var(--primary-orange);
+    color: var(--white);
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.course-card {
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    overflow: hidden; /* Garante que a imagem não vaze das bordas arredondadas */
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+}
+
+.course-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover; /* Garante que a imagem cubra a área sem distorcer */
+}
+
+.course-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Faz esta área crescer para empurrar o botão para baixo */
+}
+
+.course-category {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--white);
+    border-radius: 15px;
+    margin-bottom: 10px;
+    align-self: flex-start; /* Alinha a tag no início */
+}
+
+.course-content h3 {
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}
+
+.course-content p {
+    font-size: 15px;
+    flex-grow: 1; /* Faz o parágrafo crescer e empurrar o botão */
+}
+
+.course-content .btn {
+    margin-top: 15px;
+    align-self: flex-start; /* Alinha o botão no início */
+}

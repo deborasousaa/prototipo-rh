@@ -1,26 +1,131 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-    <title>Minha Biblioteca de Conhecimento</title>
-    <style>
-        h1 {
-            color: navy;
-            font-family: Arial, sans-serif;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca de Conhecimento SalvaBras</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>Protótipo da Biblioteca de Conhecimento</h1>
+    <header class="main-header">
+        <div class="logo">SALVABRAS</div>
+        <nav>
+            <a href="index.html">🏠 Início</a>
+            <a href="#">📚 Bibliotecas</a>
+            <a href="#">📊 Meu Dashboard</a>
+            <a href="#">👤 Meu Perfil</a>
+            <a href="#">🆘 Ajuda</a>
+        </nav>
+    </header>
 
-    <p>Bem-vindo ao nosso novo portal de conhecimento! Este é um protótipo para mostrar como podemos centralizar nossas informações.</p>
+    <main>
+        <section class="hero-banner">
+            <h1>Bem-vindos à nossa Central de Conhecimento</h1>
+            <p>Sua jornada de desenvolvimento começa aqui.</p>
+        </section>
 
-    <h2>Navegue pelas seções:</h2>
-    <ul>
-        <li><a href="ferias.html">Políticas de Férias</a></li>
-        <li>Guia de Benefícios</li>
-        <li>Ferramentas Internas</li>
-    </ul>
+        <div class="container">
+            <section class="welcome-section">
+                <h2 class="section-title">Biblioteca de Conhecimento SalvaBras</h2>
+                <p>Este é o seu portal centralizado para acessar todos os recursos de treinamento, procedimentos, políticas e materiais de desenvolvimento da nossa empresa.</p>
+                <ul>
+                    <li>✅ Desenvolver suas competências profissionais</li>
+                    <li>✅ Acessar procedimentos e manuais atualizados</li>
+                    <li>✅ Consultar políticas e normas da empresa</li>
+                    <li>✅ Acompanhar seu Plano de Desenvolvimento Individual (PDI)</li>
+                </ul>
+                <div>
+                    <a href="pdi.html" class="btn btn-orange">Acessar Meu PDI</a>
+                    <a href="treinamentos.html" class="btn btn-green">Buscar Treinamentos</a>
+                </div>
+            </section>
+
+            <section id="libraries">
+                <h2 class="section-title">Nossas Bibliotecas</h2>
+                <div class="card-grid">
+                    
+                    <!-- Card 1: Treinamentos -->
+                    <a href="treinamentos.html" class="info-card">
+                        <div class="icon">🎓</div>
+                        <h3>Treinamentos e Desenvolvimento</h3>
+                        <p>Acesse cursos, workshops e materiais de capacitação para desenvolver suas habilidades profissionais.</p>
+                        <div class="btn btn-orange" style="margin-top: auto;">Explorar</div>
+                    </a>
+
+                    <!-- Card 2: Procedimentos -->
+                    <a href="procedimentos.html" class="info-card">
+                        <div class="icon">📋</div>
+                        <h3>Procedimentos e Manuais</h3>
+                        <p>Consulte procedimentos operacionais, manuais técnicos e instruções de trabalho atualizadas.</p>
+                        <div class="btn btn-green" style="margin-top: auto;">Consultar</div>
+                    </a>
+
+                    <!-- Card 3: Políticas -->
+                    <a href="politicas.html" class="info-card">
+                        <div class="icon">🛡️</div>
+                        <h3>Políticas e Normas</h3>
+                        <p>Acesse políticas internas, normas regulamentadoras e diretrizes corporativas.</p>
+                        <div class="btn btn-blue" style="margin-top: auto;">Ver Políticas</div>
+                    </a>
+
+                    <!-- Card 4: PDIs (CORRIGIDO) -->
+                    <a href="pdi.html" class="info-card">
+                        <div class="icon">📈</div>
+                        <h3>PDIs - Planos de Desenvolvimento</h3>
+                        <p>Acompanhe seu desenvolvimento profissional e acesse seu plano personalizado de capacitação.</p>
+                        <div class="btn btn-orange" style="margin-top: auto;">Acessar Hub de PDI</div>
+                    </a>
+
+                    <!-- Card 5: ISO 9001 -->
+                    <a href="iso9001.html" class="info-card">
+                        <div class="icon">🏆</div>
+                        <h3>Documentos ISO 9001</h3>
+                        <p>Acesse documentação do Sistema de Gestão da Qualidade e certificações ISO.</p>
+                        <div class="btn btn-blue" style="margin-top: auto;">Acessar ISO</div>
+                    </a>
+
+                </div>
+            </section>
+
+            <section class="search-section">
+                <div class="container">
+                    <h2 class="section-title">Encontre o que precisa rapidamente</h2>
+                    <div class="search-box">
+                        <input type="search" placeholder="Pesquisar por palavra-chave...">
+                        <a href="#" class="btn btn-orange">Buscar</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="dashboard">
+                <h2 class="section-title">Seus Números de Desenvolvimento</h2>
+                <div class="card-grid">
+                    <div class="dashboard-card" style="border-color: var(--primary-orange);">
+                        <h3>Progresso do PDI</h3>
+                        <p class="metric">75%</p>
+                        <p>Próximo treinamento agendado.</p>
+                    </div>
+                    <div class="dashboard-card" style="border-color: var(--secondary-green);">
+                        <h3>Treinamentos Concluídos</h3>
+                        <p class="metric">42 Horas</p>
+                        <p>3 certificações obtidas este ano.</p>
+                    </div>
+                    <div class="dashboard-card" style="border-color: var(--accent-blue);">
+                        <h3>Documentos Acessados</h3>
+                        <p class="metric">18 este mês</p>
+                        <p>POP-PROD-001 é o mais utilizado.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <p><strong>SALVABRAS INDÚSTRIA E COMÉRCIO LTDA.</strong></p>
+        <p>Links Úteis: <a href="#">Site Principal</a> | <a href="#">Política de Privacidade</a> | <a href="#">Suporte</a></p>
+        <p>&copy; 2025 SalvaBras - Todos os direitos reservados.</p>
+    </footer>
 
 </body>
 </html>
